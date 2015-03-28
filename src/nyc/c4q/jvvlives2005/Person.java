@@ -12,6 +12,10 @@ package nyc.c4q.jvvlives2005;
  Write a function called registerChild which accepts as input a Person instance(Parent)
  and returns a new Person instance for the child, which has the same phoneNumber and city as the parent.
  * A Person class
+ *
+ *
+ * I AM VERY CONFUSED WITH THIS ONE....I THINK IT'S THE MANY CODES THAT'S THROWING ME OFF---I'LL TRY TO UPDATE IT
+ * SOON
  */
 import java.util.Scanner;
 
@@ -76,34 +80,6 @@ public class Person {
         System.out.println("And you?");
         String nameTwo = input.nextLine();
 
-        System.out.println(nameOne + ", where do you live?");
-        String cityOne = input.nextLine();
-        System.out.println("And you, " + nameTwo + "?");
-        String cityTwo = input.nextLine();
-
-        Person johnDoe = new Person();
-        johnDoe.setName(nameOne);
-        johnDoe.setCity(cityOne);
-
-        Person janeDoe = new Person();
-        janeDoe.setName(nameTwo);
-        janeDoe.setCity(cityTwo);
-
-        if (checkSameCity(johnDoe, janeDoe) == true) {
-            System.out.println("You two live in the same city");
-        } else {
-            System.out.println("You two live in different cities");
-        }
-
-        System.out.println();
-
-        System.out.println("Baby Registration");
-        Person parent = new Person();
-
-        parent.setPhoneNumber("(718) 123 - 6789");
-        parent.setCity("New York City");
-
-        registerChild(parent);
 
     }
 

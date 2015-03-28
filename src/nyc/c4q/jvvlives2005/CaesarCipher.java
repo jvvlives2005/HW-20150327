@@ -45,7 +45,21 @@ public class CaesarCipher {
         return encoded.toString();
     }
 
-    public static boolean codeBreaker;              //****LOST!!!!
+    public static boolean codeBreaker(String encoded1, String encoded2){
+
+        //check two different offsets to compare the two strings
+        for (int i = 1; i <= 26; i++){
+            for(int j = 1; j <= 26; j++){
+
+                if(CaesarCipher.decode(encoded1,i).equals(CaesarCipher.decode(encoded2,j)) ){
+                    return true; //this statement runs when both encoded strings get decoded to the same string
+                }
+            }
+        }
+
+        return false;
+    }
+
 
 
     public static void main(String[] args){
